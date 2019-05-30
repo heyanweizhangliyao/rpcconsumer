@@ -1,0 +1,17 @@
+server:
+  port: 8082
+  servlet:
+    path: /heyanwei
+dubbo:
+  application:
+    name: dubbo-demo-service
+  registry:
+    address: 127.0.0.1:2181
+    id: zookeeper-registry
+    protocol: zookeeper
+  protocol:
+    name: dubbo
+    port: 20880
+  provider:
+    retries: 0
+    timeout: 2000
